@@ -1,0 +1,97 @@
+[
+  {
+    "id": "TC01",
+    "input": "I want to visit Jaipur for 3 days with a budget of ₹15,000. I like history and local food.",
+    "expected_behavior": [
+      "Generate a 3-day itinerary",
+      "Recommend historical places in Jaipur",
+      "Include local food recommendations",
+      "Consider the ₹15,000 budget"
+    ]
+  },
+  {
+    "id": "TC02",
+    "input": "Plan a 5-day trip to Delhi with a budget of ₹25,000. I am interested in museums and historical places.",
+    "expected_behavior": [
+      "Generate a 5-day itinerary",
+      "Recommend historical places and museums",
+      "Consider the ₹25,000 budget",
+      "Provide a day-wise travel plan"
+    ]
+  },
+  {
+    "id": "TC03",
+    "input": "I want a 3-day trip to Goa with only ₹8,000. I like beaches and sunsets.",
+    "expected_behavior": [
+      "Generate a 3-day Goa itinerary",
+      "Focus on beaches and sunset experiences",
+      "Consider the low ₹8,000 budget",
+      "Suggest budget-friendly activities"
+    ]
+  },
+  {
+    "id": "TC04",
+    "input": "I want to plan a trip for 3 days with a budget of ₹12,000. I like historical places.",
+    "expected_behavior": [
+      "Identify that the destination is missing",
+      "Ask the user to provide a destination",
+      "Avoid generating a destination-specific itinerary"
+    ]
+  },
+  {
+    "id": "TC05",
+    "input": "Plan a 4-day trip to Mumbai. I like street food and shopping.",
+    "expected_behavior": [
+      "Identify that the budget is missing",
+      "Ask the user for a budget",
+      "Use the Mumbai, street food and shopping preferences"
+    ]
+  },
+  {
+    "id": "TC06",
+    "input": "Plan a 0-day trip to Jaipur with a budget of ₹10,000.",
+    "expected_behavior": [
+      "Identify that the number of days is invalid",
+      "Ask the user for a valid positive number of days",
+      "Avoid generating a 0-day itinerary"
+    ]
+  },
+  {
+    "id": "TC07",
+    "input": "Plan a 3-day trip to Delhi with a budget of -₹5,000.",
+    "expected_behavior": [
+      "Identify that the budget is invalid",
+      "Ask the user for a valid positive budget",
+      "Avoid calculating a travel plan using a negative budget"
+    ]
+  },
+  {
+    "id": "TC08",
+    "input": "Plan a 3-day trip to Udaipur with a budget of ₹18,000. I mainly want to visit historical places, forts and palaces.",
+    "expected_behavior": [
+      "Generate a 3-day Udaipur itinerary",
+      "Prioritize historical places",
+      "Recommend forts and palaces",
+      "Consider the ₹18,000 budget"
+    ]
+  },
+  {
+    "id": "TC09",
+    "input": "Plan a 2-day trip to Mumbai with a budget of ₹10,000. I am mainly interested in local street food.",
+    "expected_behavior": [
+      "Generate a 2-day Mumbai itinerary",
+      "Prioritize local street food",
+      "Recommend suitable food places or experiences",
+      "Consider the ₹10,000 budget"
+    ]
+  },
+  {
+    "id": "TC10",
+    "input": "What is the capital of France?",
+    "expected_behavior": [
+      "Recognize that the request is outside the travel planning scope",
+      "Politely explain that the agent is designed for travel planning",
+      "Avoid generating a travel itinerary"
+    ]
+  }
+]
